@@ -6,7 +6,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
-import { Search } from "lucide-react";
+import { Search, Mail } from "lucide-react";
 
 const ConnectPage = () => {
   return (
@@ -17,11 +17,14 @@ const ConnectPage = () => {
       </div>
       <div className="space-y-4">
         <Card>
-          <CardHeader>
-            <CardTitle>Email</CardTitle>
-            <CardDescription>
-              <p>Receive an email every time a user submit their answer.</p>
-            </CardDescription>
+          <CardHeader className="flex flex-row items-center space-x-4">
+            <Mail className="w-12 h-12" />
+            <CardHeader>
+              <CardTitle>Email</CardTitle>
+              <CardDescription>
+                <p>Receive an email every time a user submit their answer.</p>
+              </CardDescription>
+            </CardHeader>
           </CardHeader>
         </Card>
         <Card>
