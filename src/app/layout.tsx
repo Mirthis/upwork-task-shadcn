@@ -21,7 +21,9 @@ export default function RootLayout({
         {/* grid layout with fixed navbar at the top */}
         <div className="grid h-screen grid-cols-1 grid-rows-[auto_1fr]">
           <Header />
-          <main className="overflow-y-auto">{children}</main>
+          <main className="overflow-y-auto max-w-7xl p-8 mx-auto w-full">
+            {children}
+          </main>
         </div>
       </body>
     </html>
