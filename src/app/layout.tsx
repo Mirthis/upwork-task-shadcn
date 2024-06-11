@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* grid layout with fixed navbar at the top */}
+        <div className="grid h-screen grid-cols-1 grid-rows-[auto_1fr]">
+          <Header />
+          <main className="overflow-y-auto">{children}</main>
+        </div>
+      </body>
     </html>
   );
 }
