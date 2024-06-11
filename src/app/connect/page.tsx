@@ -1,4 +1,10 @@
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Search } from "lucide-react";
 
@@ -11,13 +17,34 @@ const ConnectPage = () => {
       </div>
       <div className="space-y-4">
         <Card>
-          <CardContent>Email</CardContent>
+          <CardHeader>
+            <CardTitle>Email</CardTitle>
+            <CardDescription>
+              <p>Receive an email every time a user submit their answer.</p>
+            </CardDescription>
+          </CardHeader>
         </Card>
         <Card>
-          <CardContent>Goolge Sheets</CardContent>
+          <CardHeader>
+            <CardTitle>Google Sheets</CardTitle>
+            <CardDescription>
+              <p>
+                Send your data straight to Google Sheets. Automatically syncs as
+                results come in.
+              </p>
+            </CardDescription>
+          </CardHeader>
         </Card>
         <Card>
-          <CardContent>Excel</CardContent>
+          <CardHeader>
+            <CardTitle>Excel</CardTitle>
+            <CardDescription>
+              <p>
+                Send your typeform responses to Excel Online. Turn feedbacks
+                into graph s, support queries into workflows , and much more.
+              </p>
+            </CardDescription>
+          </CardHeader>
         </Card>
       </div>
     </div>
